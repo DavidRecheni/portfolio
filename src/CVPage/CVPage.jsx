@@ -1,4 +1,4 @@
-import picture from '../assets/Profile.JPG';
+import picture from '../assets/profile-pic.jpg';
 import AboutContainer from './components/AboutContainer';
 import CertificatesContainer from './components/CertificatesContainer';
 import ContactDataContainer from './components/ContactDataContainer';
