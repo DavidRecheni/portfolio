@@ -3,20 +3,30 @@ import TwoColsData from '../../core/components/TwoColsData';
 
 const experience = [
   {
-    time: '08/2021',
+    date: { start: '08/2021', end: 'Current' },
     place: 'Berlin, DE',
     institution: { name: 'Lhotse Technologies GmbH', link: 'https://www.lhotse.de/en/' },
     title: 'Lead Front-end Developer',
+    stack: 'React, Tailwind, Eslint, React-query, Storybooks',
     description:
-      '• Design and implement a new version of their MVP from scratch. • Hire a front-end team. • Perform code reviews and enforce high quality coding standards. • Improve user experience through UX Design.  • Stack: React, Tailwind, Eslint, React-query.'
+      '• Design and implement a new version of their MVP from scratch . • Hire a front-end team. • Perform code reviews and enforce high quality coding standards. • Validate UX Design decisions and propose solutions. '
     ,
   },
   {
-    time: '08/2021',
+    date: { start: '03/2020', end: '08/2021' },
     place: 'Berlin, DE',
-    institution: { name: 'Lhotse Technologies GmbH', link: 'https://www.lhotse.de/en/' },
-    title: 'Lead Front-end Developer',
-    description: '• Design and implement a new version of their MVP from scratch. • Hire a front-end team. • Perform code reviews and enforce high quality coding standards. • Improve user experience through UX Design.  • Stack: React, Tailwind, Eslint, React-query.',
+    institution: { name: 'Facturee CWMK GmbH', link: 'https://www.facturee.de/' },
+    title: 'Senior Full-Stack Developer',
+    stack: 'ReactJS, Styled-components, Storybooks /  Angular, Bootstrap, Parse Server',
+    description: '• Develop micro-frontend tools for company suppliers (ReactJS) • Expand and maintain employee app (Angular). • Company Hardware maintainance. • Mentor dev intern. • Help ideate and create creative solutions to company problems. • UX / UI Designer',
+  },
+  {
+    date: { start: '06/2018', end: '03/2020' },
+    place: 'La Plata, ARG',
+    institution: { name: 'Avanade', link: 'https://www.avanade.com/' },
+    title: 'Lead Full-Stack Developer',
+    stack: 'AngularJS, NodeJS, Bootstrap, .NET',
+    description: '• Develop web-apps in a very fast moving enviroment • Perform code reviews and enforce high quality coding standards. • Mentor new joiners  • Help the team implement SCRUM     ',
   },
 ];
 
