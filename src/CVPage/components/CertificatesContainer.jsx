@@ -1,18 +1,23 @@
+import Header from '../../core/components/Header';
+import SidebarTwoCols from './SidebarTwoCols';
+
+const certificates = [{
+  name: 'Agile methodologies expert',
+  details: 'Accenture',
+},
+{
+  name: '.NET MVC 5 Dev',
+  details: 'ComunidadIT',
+},
+];
+
 export default function CertificatesContainer() {
   return (
     <>
-      <div className="flex items-center">
-        <div className="text-xl font-semibold">Certificates</div>
-        <div className="border-2 border-black my-4 w-full ml-6" />
-      </div>
-      <div className="flex justify-between">
-        <div>Agile methodologies expert</div>
-        <div>Accenture</div>
-      </div>
-      <div className="flex justify-between">
-        <div>.NET MVC 5 Developer</div>
-        <div>ComunidadIT</div>
-      </div>
+      <Header>Certificates </Header>
+      {certificates.map((c) => (
+        <SidebarTwoCols data={c} />
+      ))}
     </>
   );
 }

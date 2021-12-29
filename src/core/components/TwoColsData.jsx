@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 
 export default function TwoColsData({ data }) {
   return (
-    <div className="grid grid-cols-6 gap-y-2 my-2">
+    <div className="grid grid-cols-6 gap-2 my-2">
       {data.map((e) => (
         <>
-          <div className="flex flex-col">
-            <div className="text-sm">{e.date.start}</div>
-            <div className="text-sm">{e.date.end}</div>
-            <div className="text-sm">{e.place}</div>
+          <div className="flex flex-col mt-2 font-medium text-xs">
+            <p>{e.date.start}</p>
+            <p>{e.date.end}</p>
+            <p>{e.place}</p>
           </div>
           <div className="flex flex-col col-span-5">
             <div className="flex items-center gap-1">
@@ -19,7 +19,7 @@ export default function TwoColsData({ data }) {
               </a>
             </div>
             <p className="font-medium text-sm text-gray-800">{e.stack}</p>
-            {e.description.split(/(?=•)/g).map((d) => <p>{d}</p>)}
+            {e.description.split(/(?=•)/g).map((d) => <p className="text-sm">{d}</p>)}
           </div>
         </>
       ))}

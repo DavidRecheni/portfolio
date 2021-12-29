@@ -4,7 +4,7 @@ export default function AboutContainer() {
   return (
     <div className="flex flex-col">
       <Header>About me</Header>
-      <div className="flex justify-center">
+      <div className="flex justify-start">
         <p className="max-w-prose text-justify">
           Hallo! I’m a 29 y.o. Argentinian that lives in Berlin since February 2020.
           I’m always eager to learn new things. I feel comfortable accepting responsibilities and
