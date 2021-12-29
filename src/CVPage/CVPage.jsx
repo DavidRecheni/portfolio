@@ -31,7 +31,7 @@ export default function CVPage() {
       <div className="border-b-4 border-black my-4" />
 
       {/* Body */}
-      <div className="flex gap-14">
+      <div className="flex gap-6">
         <div className="flex w-4/12 flex-col gap-y-2">
           <img src={picture} alt="Me" className="w-full" />
           <SkillsContainer />
