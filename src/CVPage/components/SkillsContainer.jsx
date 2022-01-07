@@ -11,6 +11,7 @@ const skills = [
   'REST APIs',
   'SCSS',
   'Tailwind',
+  'Typescript',
   'Styled components',
   'Team managment',
   'UX Design',

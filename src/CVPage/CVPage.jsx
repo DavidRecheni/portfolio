@@ -4,6 +4,7 @@ import CertificatesContainer from './components/CertificatesContainer';
 import ContactDataContainer from './components/ContactDataContainer';
 import EducationContainer from './components/EducationContainer';
 import LanguagesContainer from './components/LanguagesContainer';
+import LiveProjectsContainer from './components/LiveProjectsContainer';
 import SkillsContainer from './components/SkillsContainer';
 import WorkExperience from './components/WorkExperience';
 
@@ -34,6 +35,7 @@ export default function CVPage() {
       <div className="flex gap-6">
         <div className="flex w-4/12 flex-col gap-y-2">
           <img src={picture} alt="Me" className="w-full" />
+          <LiveProjectsContainer />
           <SkillsContainer />
           <LanguagesContainer />
           <CertificatesContainer />
