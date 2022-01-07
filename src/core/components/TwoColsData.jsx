@@ -13,7 +13,7 @@ export default function TwoColsData({ data }) {
           <div className="flex flex-col col-span-5">
             <div className="flex items-center gap-1">
               <p className="text-lg font-semibold whitespace-nowrap">{e.title}</p>
-              <a href={e.institution.link} className="hover:border-b border-gray-500 font-medium text-sm" target="_blank" rel="noreferrer">
+              <a href={e.institution.link} className="hover:text-blue-600 font-medium text-sm" target="_blank" rel="noreferrer">
                 @
                 {e.institution.name}
               </a>
