@@ -7,10 +7,12 @@ const skills = [
   'Material UI',
   'Mongo / Mongoose',
   'NodeJS + Express',
-  'ReactJS',
+  'React@17',
+  'React-query',
   'REST APIs',
   'SCSS',
   'Tailwind',
+  'ThreeJs',
   'Typescript',
   'Styled components',
   'Team managment',
@@ -21,7 +23,7 @@ export default function SkillsContainer() {
   return (
     <>
       <Header>Skillset</Header>
-      {skills.sort().map((skill) => <div key={skill}>{skill}</div>)}
+      {skills.sort().map((skill) => <div key={skill} className="cursor-default">{skill}</div>)}
     </>
   );
 }
