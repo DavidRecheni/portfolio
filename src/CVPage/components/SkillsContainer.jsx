@@ -28,7 +28,7 @@ export default function SkillsContainer() {
         {skills.sort().map((skill) => (
           <div key={skill} className="cursor-default text-sm sm:text-base flex items-center">
             <BsDot />
-            <p>{skill}</p>
+            <p className="text-xs sm:text-base">{skill}</p>
           </div>
         ))}
       </div>

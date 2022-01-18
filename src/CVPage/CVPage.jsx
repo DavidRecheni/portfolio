@@ -17,9 +17,10 @@ export default function CVPage() {
         <div>
           <div className="text-3xl sm:text-5xl font-bold">David Recheni</div>
           <div className="text-sm sm:text-xl mt-2">
-            <p>
+            <p className="flex">
               Multimedia Designer /
-              <strike className="mr-1">Full-stack</strike>
+              {' '}
+              <strike className="mr-1 hidden sm:block">Full-stack</strike>
               Front-end Developer
             </p>
           </div>
