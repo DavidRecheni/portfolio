@@ -10,16 +10,16 @@ export default function TwoColsData({ data }) {
             <p>{e.date.end}</p>
             <p>{e.place}</p>
           </div>
-          <div className="flex flex-col col-span-5">
+          <div className="flex flex-col col-span-5 gap-1">
             <div className="flex items-center gap-1">
-              <p className="text-lg font-semibold whitespace-nowrap">{e.title}</p>
-              <a href={e.institution.link} className="hover:text-blue-600 font-medium text-sm" target="_blank" rel="noreferrer">
+              <p className="sm:text-lg font-semibold whitespace-nowrap">{e.title}</p>
+              <a href={e.institution.link} className="hover:text-blue-600 font-medium text-xs sm:text-sm" target="_blank" rel="noreferrer">
                 @
                 {e.institution.name}
               </a>
             </div>
-            <p className="font-medium text-sm text-gray-800">{e.stack}</p>
-            {e.description.split(/(?=•)/g).map((d) => <p className="text-sm">{d}</p>)}
+            <p className="font-medium text-xs sm:text-sm text-gray-800">{e.stack}</p>
+            {e.description.split(/(?=•)/g).map((d) => <p className="text-xs sm:text-sm">{d}</p>)}
           </div>
         </>
       ))}

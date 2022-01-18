@@ -10,18 +10,18 @@ import WorkExperience from './components/WorkExperience';
 
 export default function CVPage() {
   return (
-    <div className="w-6/12 my-8">
+    <div className="max-w-4xl my-2 sm:my-8 px-4">
 
       {/* Header */}
       <div className="flex justify-between items-center">
         <div>
-          <div className="text-5xl font-bold">David Recheni</div>
-          <div className="text-xl mt-2">
-            Multimedia Designer /
-            {' '}
-            <strike>Full-stack</strike>
-            {' '}
-            Front-end Developer
+          <div className="text-3xl sm:text-5xl font-bold">David Recheni</div>
+          <div className="text-sm sm:text-xl mt-2">
+            <p>
+              Multimedia Designer /
+              <strike className="mr-1">Full-stack</strike>
+              Front-end Developer
+            </p>
           </div>
         </div>
 
@@ -32,10 +32,12 @@ export default function CVPage() {
       <div className="border-b-4 border-black my-4" />
 
       {/* Body */}
-      <div className="flex gap-6">
-        <div className="flex w-4/12 flex-col gap-y-2">
-          <img src={picture} alt="Me" className="w-full" />
-          <LiveProjectsContainer />
+      <div className="flex gap-6 flex-col sm:flex-row">
+        <div className="flex w-fit sm:w-4/12 flex-col gap-y-2">
+          <div className="flex sm:flex-col w-full">
+            <img src={picture} alt="Me" className="max-w-[30%] sm:max-w-none" />
+            <LiveProjectsContainer />
+          </div>
           <SkillsContainer />
           <LanguagesContainer />
           <CertificatesContainer />

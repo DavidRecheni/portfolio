@@ -25,7 +25,7 @@ const Projects = [
 
 export default function LiveProjectsContainer() {
   return (
-    <>
+    <div className="flex flex-col w-full ml-4 sm:ml-0">
       <Header>Live projects</Header>
       {Projects.map((proj) => (
         <div
@@ -52,6 +52,6 @@ export default function LiveProjectsContainer() {
 
         </div>
       ))}
-    </>
+    </div>
   );
 }
