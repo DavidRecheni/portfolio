@@ -25,7 +25,7 @@ const Projects = [
 
 export default function LiveProjectsContainer() {
   return (
-    <div className="flex flex-col w-full ml-4 sm:ml-0">
+    <div className="flex flex-col w-full ml-4 sm:ml-0 gap-y-1">
       <Header>Live projects</Header>
       {Projects.map((proj) => (
         <div
@@ -36,10 +36,10 @@ export default function LiveProjectsContainer() {
             href={proj.url}
             target="_blank"
             rel="noreferrer"
-            className="font-medium underline flex items-center gap-2 underline-offset-1 hover:text-blue-600"
+            className="font-medium underline flex items-center gap-2 underline-offset-1  hover:text-blue-600"
           >
-            {proj.icon}
-            {proj.name}
+            <p className="sm:text-2xl">{proj.icon}</p>
+            <p className="sm:text-lg">{proj.name}</p>
           </a>
           <a
             href={proj.gitUrl}
