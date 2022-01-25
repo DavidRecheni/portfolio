@@ -45,7 +45,7 @@ export default function LiveProjectsContainer() {
             href={proj.gitUrl}
             target="_blank"
             rel="noreferrer"
-            className="font-medium underline flex items-center gap-2 underline-offset-1 hover:text-blue-600"
+            className="font-medium underline flex items-center gap-2 underline-offset-1 sm:text-lg hover:text-blue-600"
           >
             <BsGithub />
           </a>
