@@ -31,7 +31,7 @@ export default function CVPage() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 items-end">
+        <div className="flex flex-col gap-1 sm:gap-2 items-end">
           <ToggleDarkMode />
           <ContactDataContainer />
         </div>
@@ -44,7 +44,9 @@ export default function CVPage() {
       <div className="flex gap-6 flex-col sm:flex-row">
         <div className="flex w-fit sm:w-4/12 flex-col gap-y-2">
           <div className="flex sm:flex-col w-full">
-            <img src={picture} alt="Me" className="max-w-[30%] sm:max-w-none" />
+            <div className="max-w-[30%] h-auto sm:max-w-none flex items-center">
+              <img src={picture} alt="Me" />
+            </div>
             <LiveProjectsContainer />
           </div>
           <SkillsContainer />
