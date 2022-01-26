@@ -18,7 +18,7 @@ export default function TwoColsData({ data }) {
                 {e.institution.name}
               </a>
             </div>
-            <p className="font-medium text-xs sm:text-sm text-gray-800">{e.stack}</p>
+            <p className="font-medium text-xs sm:text-sm text-gray-800 dark:text-gray-400">{e.stack}</p>
             {e.description.split(/(?=•)/g).map((d) => <p className="text-xs sm:text-sm">{d}</p>)}
           </div>
         </>

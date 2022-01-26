@@ -1,4 +1,5 @@
 import picture from '../assets/profile-pic.jpg';
+import ToggleDarkMode from '../core/components/ToggleDarkMode';
 import AboutContainer from './components/AboutContainer';
 import CertificatesContainer from './components/CertificatesContainer';
 import ContactDataContainer from './components/ContactDataContainer';
@@ -18,7 +19,7 @@ export default function CVPage() {
           <div className="text-3xl sm:text-5xl font-bold dark:text-white">David Recheni</div>
           <div className="text-sm sm:text-xl mt-2">
             <div className="flex items-center sm:gap-2">
-              <p className="dark:font-handwritten dark:text-2xl dark:text-yellow-300">
+              <p className="dark:font-handwritten dark:-mb-2 dark:text-2xl dark:text-yellow-300">
                 Multimedia Designer
               </p>
               /
@@ -30,7 +31,10 @@ export default function CVPage() {
           </div>
         </div>
 
-        <ContactDataContainer />
+        <div className="flex flex-col gap-2 items-end">
+          <ToggleDarkMode />
+          <ContactDataContainer />
+        </div>
 
       </div>
 
