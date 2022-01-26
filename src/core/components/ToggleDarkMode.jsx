@@ -26,7 +26,7 @@ const ToggleDarkMode = () => {
       type="button"
       onClick={triggerSwitch}
     >
-      <motion.div className="w-4 h-4 bg-white dark:bg-black" layout transition={spring} c />
+      <motion.div className="w-4 h-4 bg-white dark:bg-black" layout transition={spring} />
     </button>
   );
 };
