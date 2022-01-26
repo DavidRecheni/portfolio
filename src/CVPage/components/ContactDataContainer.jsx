@@ -13,7 +13,7 @@ const socialMedia = [
 
 export default function ContactDataContainer() {
   return (
-    <div className="flex gap-2 flex-col sm:flex-row mt-1 sm:mt-0">
+    <div className="flex gap-2 flex-row mt-1 sm:mt-0">
       {socialMedia.map((s) => (
         <a className="hover:text-blue-600" href={s.url} target="_blank" rel="noreferrer">
           <div className="font-medium flex items-center text-2xl sm:text-4xl">

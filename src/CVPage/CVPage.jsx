@@ -18,8 +18,8 @@ export default function CVPage() {
         <div>
           <div className="text-3xl sm:text-5xl font-bold dark:text-white">David Recheni</div>
           <div className="text-sm sm:text-xl mt-2">
-            <div className="flex items-center sm:gap-2">
-              <p className="dark:font-handwritten dark:-mb-2 dark:text-2xl dark:text-yellow-300">
+            <div className="flex items-center gap-1 sm:gap-2">
+              <p className="dark:font-handwritten sm:dark:-mb-2 dark:-mb-1 sm:dark:text-2xl dark:text-yellow-300">
                 Multimedia Designer
               </p>
               /
