@@ -2,22 +2,27 @@ import { BsDot } from 'react-icons/bs';
 import Header from '../../core/components/Header';
 
 const skills = [
-  'Agile methodologies',
+  'Scrum Alliance',
+  'Ethers.js',
+  'Express',
   'GIT',
   'GraphQL',
-  'Material UI',
-  'Mongo / Mongoose',
-  'NodeJS + Express',
-  'React@17',
-  'React-query',
-  'REST APIs',
-  'SCSS',
-  'Tailwind',
-  'ThreeJs',
+  'Mongodb',
+  'Mongoose',
+  'Node.js',
+  'React',
+  'React query',
+  'REST',
+  'SASS',
+  'Solidity',
+  'Tailwindcss',
+  'Three.js',
+  'Truffle',
   'Typescript',
   'Styled components',
-  'Team managment',
+  'Team management',
   'UX Design',
+  'Web3.js',
 ];
 
 export default function SkillsContainer() {
