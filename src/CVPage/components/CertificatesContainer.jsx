@@ -16,7 +16,7 @@ export default function CertificatesContainer() {
     <>
       <Header>Certificates </Header>
       {certificates.map((c) => (
-        <SidebarTwoCols data={c} />
+        <SidebarTwoCols data={c} key={c} />
       ))}
     </>
   );
