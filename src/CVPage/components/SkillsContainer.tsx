@@ -2,7 +2,8 @@ import { BsDot } from 'react-icons/bs';
 import Header from '../../core/components/Header';
 
 const skills = [
-  'Scrum Alliance',
+  'AWS Amplify',
+  'Scrum',
   'Ethers.js',
   'Express',
   'GIT',
