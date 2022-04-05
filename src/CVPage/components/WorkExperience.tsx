@@ -7,7 +7,7 @@ const experience = [
     place: 'Berlin, DE',
     institution: { name: 'Lhotse Technologies GmbH', link: 'https://www.lhotse.de/en/' },
     title: 'Lead Front-end Developer',
-    stack: 'React, Tailwind, Eslint, React-query, Storybooks',
+    stack: 'React, Typescript, TailwindCSS, React-query, Storybooks',
     description:
       '• Design and implement a new version of their MVP from scratch . • Delegate tasks and control progress • Perform code reviews and enforce high quality coding standards. • Built a front-end team. • Mentor Front-end devs • Validate UX Design decisions and propose solutions. '
     ,
