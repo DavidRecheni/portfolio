@@ -38,11 +38,11 @@ const experience = [
   },
 ];
 
-export default function WorkExperience() {
-  return (
-    <div>
-      <Header> Work experience </Header>
-      <TwoColsData data={experience} />
-    </div>
-  );
-}
+const WorkExperience = () => (
+  <div>
+    <Header> Work experience </Header>
+    <TwoColsData data={experience} />
+  </div>
+);
+
+export default WorkExperience;

@@ -11,13 +11,13 @@ const certificates = [{
 },
 ];
 
-export default function CertificatesContainer() {
-  return (
-    <>
-      <Header>Certificates </Header>
-      {certificates.map((c) => (
-        <SidebarTwoCols data={c} key={c} />
-      ))}
-    </>
-  );
-}
+const CertificatesContainer = () => (
+  <>
+    <Header>Certificates </Header>
+    {certificates.map((c) => (
+      <SidebarTwoCols data={c} key={c.name} />
+    ))}
+  </>
+);
+
+export default CertificatesContainer;

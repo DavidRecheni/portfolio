@@ -14,11 +14,11 @@ const languages = [{
   details: 'Basic',
 }];
 
-export default function LanguagesContainer() {
-  return (
-    <>
-      <Header>Languages</Header>
-      {languages.map((l) => <SidebarTwoCols data={l} />)}
-    </>
-  );
-}
+const LanguagesContainer = () => (
+  <>
+    <Header>Languages</Header>
+    {languages.map((l) => <SidebarTwoCols data={l} />)}
+  </>
+);
+
+export default LanguagesContainer;

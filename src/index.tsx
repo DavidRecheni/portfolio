@@ -1,6 +1,6 @@
-import { StrictMode } from 'react/cjs/react.production.min';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { StrictMode } from 'react';
 import App from './App';
 
 ReactDOM.render(

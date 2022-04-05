@@ -30,11 +30,11 @@ const studies = [
   },
 ];
 
-export default function EducationContainer() {
-  return (
-    <div>
-      <Header>Education</Header>
-      <TwoColsData data={studies} />
-    </div>
-  );
-}
+const EducationContainer = () => (
+  <div>
+    <Header>Education</Header>
+    <TwoColsData data={studies} />
+  </div>
+);
+
+export default EducationContainer;
