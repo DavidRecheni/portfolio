@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import picture from '../assets/profile-pic.jpg';
 import ToggleDarkMode from '../core/components/ToggleDarkMode';
+import Badge from '../shared/components/Badge';
 import AboutContainer from './components/AboutContainer';
 import CertificatesContainer from './components/CertificatesContainer';
 import ContactDataContainer from './components/ContactDataContainer';
@@ -16,22 +17,19 @@ const spring = {
   stiffness: 700,
   damping: 30,
 };
+
 const CVPage = () => (
-  <div className="max-w-4xl my-2 sm:my-8 px-4 dark:text-[#c9d1d9]">
+  <div className="max-w-4xl my-2 sm:my-8 px-4 dark:text-github-gray">
     {/* Header */}
     <div className="flex justify-between items-center">
       <div>
         <div className="text-3xl sm:text-5xl font-bold dark:text-white">David Recheni</div>
         <div className="text-sm sm:text-xl mt-2">
           <div className="flex items-center gap-1 sm:gap-2">
-            <p className="dark:font-handwritten sm:dark:-mb-2 dark:-mb-1 sm:dark:text-2xl dark:text-yellow-300">
-              Multimedia Designer
-            </p>
-            /
-            <p className="flex">
-              <del className="mr-1 hidden sm:block">Full-stack</del>
-              Front-end Developer
-            </p>
+            <Badge title="Backend" disabled />
+            <Badge title="UX designer" />
+            <Badge title="Frontend" />
+            <Badge title="Blockchain" />
           </div>
         </div>
       </div>
@@ -49,8 +47,8 @@ const CVPage = () => (
     <div className="flex gap-6 flex-col sm:flex-row">
       <div className="flex w-fit sm:w-4/12 flex-col gap-y-2">
         <div className="flex sm:flex-col w-full">
-          <motion.div className="max-w-[30%] h-auto sm:max-w-none flex items-center " layout transition={spring}>
-            <img src={picture} alt="Me" />
+          <motion.div className="max-w-[30%] h-auto sm:max-w-none flex items-center rounded-full" layout transition={spring}>
+            <img src={picture} alt="Me" className="rounded-full border-2 border-gray-300" />
           </motion.div>
           <LiveProjectsContainer />
         </div>
