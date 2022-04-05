@@ -16,10 +16,8 @@ const spring = {
   stiffness: 700,
   damping: 30,
 };
-
 const CVPage = () => (
-  <div className="max-w-4xl my-2 sm:my-8 px-4 dark:text-gray-200">
-
+  <div className="max-w-4xl my-2 sm:my-8 px-4 dark:text-[#c9d1d9]">
     {/* Header */}
     <div className="flex justify-between items-center">
       <div>

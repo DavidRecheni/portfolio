@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <div className="w-[99vw] h-full dark:bg-[#0d1117]">
-      <div className="w-full h-full flex justify-center relative ">
+      <div className="w-full h-full flex justify-center relative">
         <CVPage />
       </div>
     </div>
