@@ -1,5 +1,7 @@
-const statsUrlDark = 'https://camo.githubusercontent.com/a3f53ff9884397e0b754e5a088a7faeec52f615ca6caef54d88cce5d718419c7/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d646176696472656368656e6926636f756e745f707269766174653d7472756526686964655f626f726465723d747275652673686f775f69636f6e733d7472756526686964655f7469746c653d7472756526686964653d636f6e7472696273267468656d653d6769746875625f6461726b';
-const statsUrlLight = 'https://camo.githubusercontent.com/e5d2c523494b84b39da380618da9d4826b7c13ba8b757a60d273d51ddb71b6e2/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d646176696472656368656e6926636f756e745f707269766174653d7472756526686964655f626f726465723d747275652673686f775f69636f6e733d7472756526686964655f7469746c653d7472756526686964653d636f6e7472696273';
+import data from '../CVData';
+
+const statsUrlDark = `https://github-readme-stats.vercel.app/api?username=${data.githubUsername}&count_private=true&hide_border=true&show_icons=true&hide_title=true&hide=contribs&theme=github_dark`;
+const statsUrlLight = `https://github-readme-stats.vercel.app/api?username=${data.githubUsername}&count_private=true&hide_border=true&show_icons=true&hide_title=true&hide=contribs`;
 const GithubStats = () => (
   <div className="my-2 w-full flex justify-center">
     <img src={statsUrlLight} alt="Github stats" className="dark:hidden" />

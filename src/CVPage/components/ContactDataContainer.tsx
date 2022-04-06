@@ -1,13 +1,14 @@
-import { BsLinkedin, BsGithub } from 'react-icons/bs';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import data from '../CVData';
 
 const socialMedia = [
   {
-    icon: <BsGithub />,
-    url: 'https://github.com/DavidRecheni',
+    icon: BsGithub,
+    url: `https://github.com/${data.githubUsername}`,
   },
   {
-    icon: <BsLinkedin />,
-    url: 'http://linkedin.com/in/david-recheni/',
+    icon: BsLinkedin,
+    url: `http://linkedin.com/in/${data.linkedinProfile}/`,
   },
 ];
 
@@ -16,7 +17,7 @@ const ContactDataContainer = () => (
     {socialMedia.map((s) => (
       <a className="hover:text-blue-600" href={s.url} target="_blank" rel="noreferrer">
         <div className="font-medium flex items-center text-2xl sm:text-4xl">
-          {s.icon}
+          {s.icon({})}
         </div>
       </a>
     ))}

@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 interface ISidebarTwoCols {
   data : {
     name: string,
