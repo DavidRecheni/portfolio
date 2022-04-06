@@ -43,7 +43,7 @@ const CVPage = () => (
       <div className="flex w-fit sm:w-4/12 flex-col gap-y-2">
         <div className="flex sm:flex-col w-full">
           <div className="max-w-[30%] h-auto sm:max-w-none flex items-center rounded-full">
-            <img src={picture} alt="Me" className="rounded-full border-2 border-gray-300" />
+            <img src={picture} alt="Me" className="rounded-full " />
           </div>
           <LiveProjectsContainer />
         </div>
