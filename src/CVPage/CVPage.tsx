@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import picture from '../assets/profile-pic.jpg';
 import ToggleDarkMode from '../core/components/ToggleDarkMode';
 import Badge from '../shared/components/Badge';
@@ -11,12 +10,6 @@ import LanguagesContainer from './components/LanguagesContainer';
 import LiveProjectsContainer from './components/LiveProjectsContainer';
 import SkillsContainer from './components/SkillsContainer';
 import WorkExperience from './components/WorkExperience';
-
-const spring = {
-  type: 'spring',
-  stiffness: 700,
-  damping: 30,
-};
 
 const CVPage = () => (
   <div className="max-w-4xl my-2 sm:my-8 px-4 dark:text-github-gray">
@@ -47,9 +40,9 @@ const CVPage = () => (
     <div className="flex gap-6 flex-col sm:flex-row">
       <div className="flex w-fit sm:w-4/12 flex-col gap-y-2">
         <div className="flex sm:flex-col w-full">
-          <motion.div className="max-w-[30%] h-auto sm:max-w-none flex items-center rounded-full" layout transition={spring}>
+          <div className="max-w-[30%] h-auto sm:max-w-none flex items-center rounded-full">
             <img src={picture} alt="Me" className="rounded-full border-2 border-gray-300" />
-          </motion.div>
+          </div>
           <LiveProjectsContainer />
         </div>
         <SkillsContainer />
