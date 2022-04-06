@@ -1,4 +1,4 @@
-import picture from '../assets/profile-pic.jpg';
+import picture from '../config/profile-pic.jpg';
 import ToggleDarkMode from '../core/components/ToggleDarkMode';
 import Badge from '../shared/components/Badge';
 import AboutContainer from './components/AboutContainer';
@@ -11,12 +11,14 @@ import LiveProjectsContainer from './components/LiveProjectsContainer';
 import SkillsContainer from './components/SkillsContainer';
 import WorkExperience from './components/WorkExperience';
 
+import data from '../config/CVData';
+
 const CVPage = () => (
   <div className="max-w-4xl my-2 sm:my-8 px-4 dark:text-github-gray">
     {/* Header */}
     <div className="flex justify-between items-center">
       <div>
-        <div className="text-3xl sm:text-5xl font-bold dark:text-white">David Recheni</div>
+        <div className="text-3xl sm:text-5xl font-bold dark:text-white">{data.name}</div>
         <div className="text-sm sm:text-xl mt-2">
           <div className="flex items-center gap-1 sm:gap-2">
             <Badge title="Backend" disabled />

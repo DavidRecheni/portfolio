@@ -1,7 +1,7 @@
 import Header from '../../core/components/Header';
 import TwoColsData from '../../core/components/TwoColsData';
 
-import data from '../CVData';
+import data from '../../config/CVData';
 
 const EducationContainer = () => (
   <div>

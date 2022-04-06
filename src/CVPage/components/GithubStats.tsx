@@ -1,4 +1,4 @@
-import data from '../CVData';
+import data from '../../config/CVData';
 
 const statsUrlDark = `https://github-readme-stats.vercel.app/api?username=${data.githubUsername}&count_private=true&hide_border=true&show_icons=true&hide_title=true&hide=contribs&theme=github_dark`;
 const statsUrlLight = `https://github-readme-stats.vercel.app/api?username=${data.githubUsername}&count_private=true&hide_border=true&show_icons=true&hide_title=true&hide=contribs`;
