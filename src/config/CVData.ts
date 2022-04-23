@@ -1,4 +1,5 @@
 import { Gi3DMeeple, GiCardJoker, GiDeathStar } from 'react-icons/gi';
+import { BsFillCreditCard2FrontFill } from 'react-icons/bs';
 
 export default {
   name: 'David Recheni',
@@ -69,6 +70,12 @@ export default {
   linkedinProfile: 'david-recheni',
 
   projects: [
+    {
+      icon: BsFillCreditCard2FrontFill,
+      name: '3d card customizer',
+      url: 'https://3d-card-viewer.netlify.app/',
+      gitUrl: 'https://github.com/DavidRecheni/3d-card-customizable',
+    },
     {
       icon: GiCardJoker,
       name: 'DavidRecheni.dev',
