@@ -3,7 +3,7 @@ import Header from '../../core/components/Header';
 import data from '../../config/CVData';
 
 const LiveProjectsContainer = () => (
-  <div className="flex flex-col w-full ml-4 sm:ml-0 gap-y-1">
+  <div className="flex flex-col w-full ml-4 sm:ml-0 gap-y-2">
     <Header>Live projects</Header>
     {data.projects.map((proj) => (
       <div
@@ -17,8 +17,10 @@ const LiveProjectsContainer = () => (
           className="font-medium underline flex items-center gap-2 underline-offset-1  hover:text-blue-600"
         >
           <p className="sm:text-2xl">{proj.icon({})}</p>
-          <p className="sm:text-lg">{proj.name}</p>
+          <p className="sm:text-md">{proj.name}</p>
         </a>
+        {proj.gitUrl
+        && (
         <a
           href={proj.gitUrl}
           target="_blank"
@@ -27,7 +29,7 @@ const LiveProjectsContainer = () => (
         >
           <BsGithub />
         </a>
-
+        )}
       </div>
     ))}
   </div>

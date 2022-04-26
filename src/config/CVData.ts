@@ -1,4 +1,6 @@
-import { Gi3DMeeple, GiCardJoker, GiDeathStar } from 'react-icons/gi';
+import {
+  Gi3DMeeple, GiChaingun, GiCardJoker, GiDeathStar,
+} from 'react-icons/gi';
 import { BsFillCreditCard2FrontFill } from 'react-icons/bs';
 
 export default {
@@ -70,6 +72,12 @@ export default {
   linkedinProfile: 'david-recheni',
 
   projects: [
+    {
+      icon: GiChaingun,
+      name: 'Chaintree - web3 project (WIP)',
+      url: 'https://chaintree.xyz/',
+    },
+
     {
       icon: BsFillCreditCard2FrontFill,
       name: '3d card customizer',
